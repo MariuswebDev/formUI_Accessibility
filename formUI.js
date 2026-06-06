@@ -5,6 +5,7 @@ const confirmInput = document.getElementById('confirm-password');
 
 toggleBtn.addEventListener('click', () => {
     input.type = input.type === 'password' ? 'text' : 'password';
+
 })
 
 toggleBtnConfirm.addEventListener('click', () => {
