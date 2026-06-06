@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border: 3px solid #333;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  border: 3px solid #333;
+  border-radius: 5px;
+  color: crimson;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+.password-eye {
+  position: absolute;
+}
+
+.password-eye img {
+  position: relative;
+  top: 5px;
+  left: -45px;
+}
+
+.profile {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.account-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  text-align: left;
+  background: #ccc;
+  margin: 1rem 0;
+  padding: 1rem 1rem 6rem 1rem;
+  width: 100%;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+
+figure > img {
+  width: 150px;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  gap: 0;
+}
+
+.btn button {
+  background: #333;
+  color: #fff;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition:
+    color 0.5s ease,
+    transform 0.5s ease,
+    background 0.5s ease,
+    border 0.5s ease;
+}
+
+.btn button:hover {
+  transform: scale(1.1);
+  background: #ffff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.crossed {
+  color: gray;
+  font-weight: light;
+  text-decoration: line-through;
+}
+
+.error-message {
+  font-size: 0.875rem;
+  color: crimson;
+}

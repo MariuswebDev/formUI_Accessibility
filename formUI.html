@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="formUI.css">
+</head>
+
+<body>
+    <main>
+        <form>
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" name="name" id="name" aria-required="true" aria-describedby="fill this field"
+                    required />
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" aria-required="true" aria-describedby="email-error"
+                    aria-labelledby="" required><br>
+                <span id="email-error" class="error-message">
+                    Email is already taken
+                </span>
+            </div>
+            <div>
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" id="password" minlength="8" aria-required="true"
+                    aria-describedby="password-error" required />
+                <button class="password-eye">
+                    <img id="toggleButton" src="images/passwordvisibility.svg" width="50px" height="30px"
+                        alt="password-img-visibility">
+                </button><br>
+                <span id="password-error" class="error-message">
+                    password must be atleast 8 characters long
+                </span>
+            </div>
+            <div>
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" name="confirm-password" id="confirm-password" minlength="8" aria-required="true"
+                    aria-describedby="confirm-error" required />
+                <button class="password-eye">
+                    <img id="toggleConfirm" src="images/passwordvisibility.svg" width="50px" height="30px"
+                        alt="password-img-visibility">
+                </button><br>
+                <span id="confirm-error" class="error-message">
+                    password must match
+                </span>
+            </div>
+            <div class="btn">
+                <button type="submit">Update Profile</button>
+            </div>
+        </form>
+        <div class="profile">
+            <figure>
+                <img src="images/progress.svg" alt="progress image">
+                <figcaption>Profile Completeness</figcaption>
+            </figure>
+            <div class="account-content">
+                <h3 class="crossed">Create Account</h3>
+                <h3 class="crossed">Update Roadmap Progress</h3>
+                <h3 class="crossed">Setup Public Profile</h3>
+                <h3>Complete Your first project</h3>
+                <h3>Invite your Friends</h3>
+            </div>
+        </div>
+    </main>
+    <script src="formUI.js"></script>
+</body>
+
+</html>
